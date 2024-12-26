@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".CategoriesActivity">
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Task Title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Due Date -->
+    <TextView
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Due Date"
+        android:textSize="14sp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- CheckBox for Task Completion -->
+    <CheckBox
+        android:id="@+id/task_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/taskDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="#fff"
+        android:backgroundTint="#FF0000"/>
+
+
+</LinearLayout>
